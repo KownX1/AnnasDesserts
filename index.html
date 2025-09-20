@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Desserts - Repostería Artesanal</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fff9f9;
+        }
+        
+        .logo-font {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffd6e0 0%, #fff9f9 100%);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .order-btn {
+            background: linear-gradient(45deg, #ff85a2, #ff9a9e);
+            transition: all 0.3s ease;
+        }
+        
+        .order-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 133, 162, 0.4);
+        }
+        
+        .featured-badge {
+            background: linear-gradient(45deg, #d4a373, #fefae0);
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <i data-feather="heart" class="text-pink-400 mr-2"></i>
+                <span class="logo-font text-2xl text-pink-500">Anna's Desserts</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-pink-500 font-medium">Inicio</a>
+                <a href="#productos" class="hover:text-pink-500 transition">Productos</a>
+                <a href="#dubai" class="hover:text-pink-500 transition">Chocolate Dubai</a>
+                <a href="#pedidos" class="hover:text-pink-500 transition">Pedidos</a>
+                <a href="#contacto" class="hover:text-pink-500 transition">Contacto</a>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">Dulces momentos <span class="text-pink-500">hechos a mano</span></h1>
+                <p class="text-lg mb-8 text-gray-600">Deliciosos postres artesanales hechos con los mejores ingredientes y mucho amor. Endulzamos tus momentos especiales.</p>
+                <a href="#pedidos" class="order-btn text-white font-semibold py-3 px-8 rounded-full inline-block">Hacer pedido</a>
+            </div>
+            <div data-aos="fade-left" class="relative">
+               <img src="CHOCOLATE DUBAI.png" alt=""> >
+                <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-md">
+                    <span class="text-xs font-semibold text-gray-500">Poestre del mes</span>
+                    <p class="font-bold text-pink-500">Chcolate Dubai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="productos" class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nuestros <span class="text-pink-500">Productos</span></h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Pasteles -->
+                <div data-aos="fade-up" class="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="PASTEL.png" alt="Pasteles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Pasteles</h3>
+                        <p class="text-gray-600 mb-4">Deliciosos pasteles personalizados para cada ocasión especial.</p>
+                        <a href="#pedidos" class="text-pink-500 font-medium flex items-center">
+                            Ordenar ahora <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Cupcakes -->
+                <div data-aos="fade-up" data-aos-delay="100" class="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="CUPCAKES.png" alt="Cupcakes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Cupcakes</h3>
+                        <p class="text-gray-600 mb-4">Pequeñas delicias con decoraciones creativas y sabores únicos.</p>
+                        <a href="#pedidos" class="text-pink-500 font-medium flex items-center">
+                            Ordenar ahora <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Cake Pops -->
+                <div data-aos="fade-up" data-aos-delay="200" class="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="CAKEPOPS.png" alt="Cake Pops" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Cake Pops</h3>
+                        <p class="text-gray-600 mb-4">Divertidos y deliciosos pops de pastel para cualquier celebración.</p>
+                        <a href="#pedidos" class="text-pink-500 font-medium flex items-center">
+                            Ordenar ahora <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Cheesecakes -->
+                <div data-aos="fade-up" data-aos-delay="300" class="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="CHEESECAKES.png" alt="Cheesecakes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Cheesecakes</h3>
+                        <p class="text-gray-600 mb-4">Cremosos y suaves cheesecakes con diferentes toppings y sabores.</p>
+                        <a href="#pedidos" class="text-pink-500 font-medium flex items-center">
+                            Ordenar ahora <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product - Chocolate Dubai -->
+    <section id="dubai" class="py-16 px-6 bg-pink-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div data-aos="fade-right" class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <span class="featured-badge text-xs font-bold py-1 px-3 rounded-full inline-block mb-4">NUEVO</span>
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Chocolate <span class="text-amber-700">Dubai</span></h2>
+                    <p class="text-gray-600 mb-6">Nuestro exclusivo chocolate Dubai es una experiencia de lujo para tu paladar. Hecho con los mejores ingredientes importados y una receta secreta que te transportará a los Emiratos Árabes.</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Chocolate belga de alta calidad</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Especias árabes exclusivas</span>
+                        </li>
+                    </ul>
+                    <a href="#pedidos" class="order-btn text-white font-semibold py-3 px-8 rounded-full inline-block">Pedir Chocolate Dubai</a>
+                </div>
+                <div data-aos="fade-left" class="md:w-1/2 relative">
+                    <img src="CHOCOLATE DUBAI.png" alt="Chocolate Dubai" class="rounded-lg shadow-xl w-full">
+                    <div class="absolute -top-5 -left-5 bg-white p-3 rounded-lg shadow-md">
+                        <div class="flex items-center">
+                            <i data-feather="star" class="text-yellow-400 mr-1"></i>
+                            <span class="font-bold">5.0</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Calificación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="pedidos" class="py-16 px-6 bg-white">
+  <div class="max-w-4xl mx-auto bg-pink-50 rounded-xl p-8 shadow-sm">
+    <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">
+      Haz tu <span class="text-pink-500">pedido</span>
+    </h2>
+
+    <form id="form-pedido" action="https://formspree.io/f/xgvlgbap" method="POST" class="space-y-6">
+      <!-- Opcional: asunto y redirección (puedes quitar la redirección si no quieres salir de la página) -->
+      <input type="hidden" name="_subject" value="Nuevo pedido desde la web">
+      <!-- <input type="hidden" name="_redirect" value="https://tu-dominio.com/gracias.html"> -->
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required
+                 class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-300 focus:border-pink-500">
+        </div>
+        <div>
+          <label for="telefono" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required
+                 class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-300 focus:border-pink-500">
+        </div>
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+        <input type="email" id="email" name="email" required
+               class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-300 focus:border-pink-500">
+      </div>
+
+      <div>
+        <label for="producto" class="block text-sm font-medium text-gray-700 mb-1">Producto</label>
+        <select id="producto" name="producto" required
+                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-300 focus:border-pink-500">
+          <option value="">Selecciona un producto</option>
+          <option>Pastel</option>
+          <option>Cupcake</option>
+          <option>Cake Pop</option>
+          <option>Cheesecake</option>
+          <option>Chocolate Dubai</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="detalles" class="block text-sm font-medium text-gray-700 mb-1">Detalles del pedido</label>
+        <textarea id="detalles" name="detalles" rows="4"
+                  class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-300 focus:border-pink-500"
+                  placeholder="Sabor, decoración, tamaño, fecha de entrega, etc."></textarea>
+      </div>
+
+      <!-- Campo trampa anti-spam recomendado por Formspree -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="pt-4">
+        <button type="submit"
+                class="order-btn bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-full w-full md:w-auto">
+          Enviar pedido <i data-feather="shopping-cart" class="ml-2 inline"></i>
+        </button>
+      </div>
+
+      <!-- Mensajes -->
+      <p id="form-msg" class="text-sm mt-3"></p>
+    </form>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const form = document.getElementById('form-pedido');
+    const msg = document.getElementById('form-msg');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault(); // evitamos el envío por defecto (redirigir)
+      msg.textContent = 'Enviando...';
+
+      try {
+        const formData = new FormData(form);
+        const resp = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' } // evita redirecciones de Formspree
+        });
+
+        if (resp.ok) {
+          msg.textContent = '¡Pedido enviado con éxito! Te contactaremos pronto.';
+          msg.className = 'text-green-600 text-sm mt-3';
+          form.reset();
+        } else {
+          // Leer detalle de error si lo hay
+          let detail = '';
+          try {
+            const data = await resp.json();
+            detail = (data && data.errors && data.errors[0] && data.errors[0].message) ? ' - ' + data.errors[0].message : '';
+          } catch (_) {}
+          msg.textContent = 'No se pudo enviar el pedido' + detail + '. Intenta de nuevo.';
+          msg.className = 'text-red-600 text-sm mt-3';
+        }
+      } catch (err) {
+        msg.textContent = 'Error de red. Revisa tu conexión e intenta de nuevo.';
+        msg.className = 'text-red-600 text-sm mt-3';
+      }
+    });
+  })();
+</script>
+
+
+    <!-- Testimonials -->
+    <section class="py-16 px-6 bg-pink-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Lo que dicen <span class="text-pink-500">nuestros clientes</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="http://static.photos/people/200x200/1" alt="Cliente" class="h-10 w-10 rounded-full">
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-medium">María González</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"El pastel de chocolate para mi cumpleaños fue increíble. Todos mis invitados preguntaron dónde lo compré. Definitivamente volveré a pedir!"</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="http://static.photos/people/200x200/2" alt="Cliente" class="h-10 w-10 rounded-full">
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-medium">Carlos Martínez</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Probé el nuevo Chocolate Dubai y es simplemente espectacular. La combinación de sabores es única y el empaque es de lujo. Vale cada centavo."</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="http://static.photos/people/200x200/3" alt="Cliente" class="h-10 w-10 rounded-full">
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-medium">Laura Sánchez</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Los cupcakes para la fiesta de mi hija fueron un éxito. No solo eran hermosos sino también deliciosos. Anna's Desserts es mi repostería favorita ahora."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contacto" class="bg-gray-800 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="heart" class="text-pink-400 mr-2"></i>
+                        <span class="logo-font text-2xl">Anna's Desserts</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Endulzando tus momentos especiales desde 2009.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-pink-400 transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400 transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400 transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2 text-pink-400"></i>
+                            <span>Calle Dulce 123, ciudad</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 text-pink-400"></i>
+                            <span>+52 686 147 1880</span>
+                        </li>
+                       
+                    </ul>
+                </div>
+                
+              
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Anna's Desserts. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script>feather.replace();</script>
+</body>
+</html>
